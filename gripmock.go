@@ -61,14 +61,14 @@ func main() {
 	importDirs := strings.Split(*imports, ",")
 
 	// generate pb.go and grpc server based on proto
-	generateProtoc(protocParam{
-		protoPath:   protoPaths,
-		adminPort:   *adminport,
-		grpcAddress: *grpcBindAddr,
-		grpcPort:    *grpcPort,
-		output:      output,
-		imports:     importDirs,
-	})
+	// generateProtoc(protocParam{
+	// 	protoPath:   protoPaths,
+	// 	adminPort:   *adminport,
+	// 	grpcAddress: *grpcBindAddr,
+	// 	grpcPort:    *grpcPort,
+	// 	output:      output,
+	// 	imports:     importDirs,
+	// })
 
 	// build the server
 	//buildServer(output)
